@@ -1,8 +1,15 @@
 #include<string.h>
 #include<string>
-#include<algorithm>
+#include<time.h>
+#include<stdlib.h>
 #include<iostream>
 using namespace std;
+
+
+void stvaranjemina(); //stvara mine na početku igre
+void igra();  //početak igre
+void ispisp();  //ispisuje polje
+
 struct podacIgre
 {
     int ploca[7][7];
@@ -21,3 +28,12 @@ int main()
     }
     return 0;
 }
+
+void stvaranjemina()
+{
+    srand(time(NULL));
+    int brojac=0;
+
+
+    int i rand()%10;
+    int j rand()%10;
